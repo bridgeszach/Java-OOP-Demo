@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.lang.System;
 
 
-public class Member {
+abstract public class Member {
 
     public Member() {
         System.out.println("Parent Constructor with no parameter.");
@@ -53,10 +53,8 @@ public class Member {
         System.out.println("Member Name: " + name);
         System.out.println("Member ID: " + memberID);
         System.out.println("Member Since: " + memberSince);
-        System.out.println("Annual Fee: " + annualFee);
+        System.out.println("Annual Fee: $" + annualFee);
     }
 
-    public void calculateAnnualFee(){
-        annualFee = 0;
-    }
+    abstract public void calculateAnnualFee();
 }

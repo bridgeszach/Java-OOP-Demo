@@ -25,7 +25,7 @@ public class Main {
         clubMembers[2] = new NormalMember("Bill", 3, 2011);
         clubMembers[3] = new VIPMember("Carol", 4, 2012);
         clubMembers[4] = new VIPMember("Jane", 5, 2012);
-        clubMembers[5] = new Member("Mary", 6, 2013);
+        clubMembers[5] = new VIPMember("Mary", 6, 2013);
 
         for (Member m : clubMembers){
             m.calculateAnnualFee();
